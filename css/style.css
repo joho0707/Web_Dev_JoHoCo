@@ -1,26 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Protest+Guerrilla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Anton&family=Protest+Guerrilla&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Anton&family=Protest+Guerrilla&display=swap'); */
+/* better to use links in html - faster render */
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Aldrich", sans-serif;
     color: white;
     background-color: #333;
+    line-height: 1.2;
 }
 
 #navbar {
     background-color: black;
     position: sticky;
+
+    /* the following must be included to make the navbar sticky */
+    top: 0; 
+    z-index: 100;
 }
 
 h1 {
-    color: firebrick;
-    font-size: 40px;
-    text-decoration: underline;
+    color: #ff4d4d;
+    font-size: 3rem;
     text-align: center;
     font-family: "Protest Guerrilla", sans-serif;
 }
@@ -33,6 +38,7 @@ h1 {
 #links ul {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #links ul li a {
@@ -43,22 +49,28 @@ h1 {
 }
 #links ul li a:hover {
     background-color: firebrick;
-    color: black;
+    color: white;
 }
 
 h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
     text-align: center;
 }
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    max-width: 100%;
     width: 50%;
+    height: auto;
 }
 
 p {
-    font-size: 19px;
+    line-height: 1.2;
+    margin: 1rem auto;
+    max-width: 60ch;
+    font-size: 1.25rem;
+    padding: 0 1rem;
 }
 
