@@ -36,6 +36,10 @@ h1 {
     font-family: "Protest Guerrilla", sans-serif;
 }
 
+a {
+    color: lightblue;
+}
+
 #links {
     display: flex;
     justify-content: center;
@@ -82,7 +86,7 @@ img {
 }
 
 .section {
-    margin: 10px;
+    margin: 30px;
     padding: 2rem;
     border-radius: 10px;
 
@@ -90,7 +94,6 @@ img {
 }
 
 #car-otd {
-    margin: 10px;
     padding: 1rem;
     border-radius: 10px;
 }
